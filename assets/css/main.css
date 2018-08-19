@@ -519,12 +519,9 @@ a {
 
 .header-background {
   background: url(../images/face3.jpg);
-  opacity: 0;
-  -webkit-animation: pop-in 2.0s ease-out forwards;
-  animation: pop-in 2.0s ease-out forwards;
-  -webkit-animation-delay: 2.0s;
-  animation-delay: 2.0s;
-  border-radius: 50%;
+  /*opacity:0;
+    animation: pop-in 2.0s ease-out forwards;
+    animation-delay: 2.0s; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 280px 20px;
@@ -554,6 +551,7 @@ a {
     display: none; }
   .header--sticky {
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -624,6 +622,7 @@ a {
   margin: 0rem auto; }
 
 .portfolio-piece {
+  background-color: blue;
   padding: 1rem;
   width: 100%;
   height: calc(24rem -2rem);
@@ -682,6 +681,43 @@ a {
 @media only screen and (min-width: 768px) {
   .other-works__article-title {
     max-width: 26rem; } }
+
+gallery {
+  border: 1px solid #ccc; }
+
+div.gallery:hover {
+  border: 1px solid #777; }
+
+div.gallery img {
+  width: 100%;
+  height: auto; }
+
+div.desc {
+  padding: 15px;
+  text-align: center; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%; }
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0; } }
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%; } }
+
+.clearfix:after {
+  content: "";
+  display: table-row;
+  clear: both; }
 
 .contact {
   background: #333333;
